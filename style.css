@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Lumanosimo&family=Orbitron:wght@400;500&family=Poppins:wght@300;400;500;600;700;800;900&family=Tektur:wght@400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: "Dancing Script", cursive; */
+  font-family: "Lumanosimo", cursive;
+  user-select: none;
+}
+
+body {
+  color: #262626;
+  background-color: orange;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+  display: flex;
+}
+
+.notebook {
+  width: 600px;
+  min-height: 100vh;
+  padding-top: 20px;
+  margin: auto;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.input-container {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.input-container #pencil {
+  cursor: pointer;
+  font-size: 3rem;
+  color: #ffc400d7;
+}
+
+.input-container #eraser {
+  display: none;
+  cursor: pointer;
+  font-size: 3rem;
+  color: lightpink;
+}
+
+.input-container input {
+  font-family: inherit;
+  outline: 0;
+  border: 0;
+  width: 65%;
+  font-size: 1.5rem;
+  border-bottom: 3px solid lightgray;
+  font-family: "Dancing Script", cursive;
+  pointer-events: none;
+}
+
+#groceryItems {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 75%;
+  font-size: 1.5rem;
+}
+
+#groceryItems h2 {
+  cursor: pointer;
+  font-family: "Dancing Script", cursive;
+}
+
+#groceryItems .cancel {
+  text-decoration: line-through;
+}
+
+.save-btn {
+  /* border: 1px solid #000; */
+  display: flex;
+  width: 100%;
+  min-height: 76.5vh;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.save-btn i {
+  /* border: 1px solid #000; */
+  color: #0099ffd7;
+  font-size: 50px;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.save-btn i:hover {
+  /* border: 1px solid #000; */
+  color: #66aedf;
+  font-size: 53px;
+}
+
+@media (max-width: 768px) {
+  #groceryItems {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1rem;
+  }
+
+  .input-container i {
+    font-size: 2rem;
+  }
+
+  .input-container input {
+    font-size: 1rem;
+  }
+
+  #groceryItems {
+    font-size: 0.9rem;
+  }
+}
